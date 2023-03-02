@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: Rubik;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffd0d0;
+  
+}
+
+/* Default styles */
+main {
+  width: 600px;
+  height: 400px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: #E4EBF1;
+  box-shadow: #bec8e4 2px 2px 5px, white -2px -2px 5px;
+  transition: ease 0.4s;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* Styles for even smaller screens */
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+}
+
+main:hover {
+  transform: scale(1.05);
+  background-color: #dae0e5;
+  box-shadow: #bec8e4 3px 3px 5px, #f3f3f3 -3px -3px 5px;
+  cursor: pointer;
+}
+
+
+section {
+  width: 100%;
+}
+.card-title {
+  font-size: 2.5em;
+  width: 90%;
+  margin: 0;
+  color: #303133;
+}
+.card-content {
+  font-size: 1.1em;
+  width: 80%;
+  text-align: justify;
+  color: #545759;
+}
+
+.abutton {
+  text-decoration: none;
+  width: 175px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.15em;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 100vh;
+  border: solid 2px #545759;
+  color: #545759;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+.abutton svg {
+  width: 13px;
+  fill: #545759;
+}
+.abutton:hover {
+  border: 2px solid green;
+  color: green;
+  transform: scale(1.06);
+}
+.abutton:hover svg {
+  fill: green;
+}
