@@ -10,7 +10,21 @@ body {
   background: #ffd0d0;
   
 }
-
+section {
+  width: 100%;
+}
+.card-title {
+  font-size: 2.5em;
+  width: 90%;
+  margin: 0;
+  color: #303133;
+}
+.card-content {
+  font-size: 1.1em;
+  width: 80%;
+  text-align: justify;
+  color: #545759;
+}
 /* Default styles */
 main {
   width: 600px;
@@ -31,13 +45,28 @@ main {
     width: 90%;
     height: auto;
     padding: 20px;
+    background-color: rgb(151, 255, 151);
   }
 }
 
 /* Styles for even smaller screens */
 @media (max-width: 480px) {
   main {
-    padding: 10px;
+    padding: 15px;
+    background-color: rgb(221, 144, 144);
+    
+  }
+  .card-title {
+    font-size:2.3em;
+    width: 100%;
+    margin: 0;
+    color: #303133;
+  }
+  .card-content {
+    font-size: 0.8em;
+    width: 100%;
+    text-align: justify;
+    color: #545759;
   }
 }
 
@@ -49,26 +78,13 @@ main:hover {
 }
 
 
-section {
-  width: 100%;
-}
-.card-title {
-  font-size: 2.5em;
-  width: 90%;
-  margin: 0;
-  color: #303133;
-}
-.card-content {
-  font-size: 1.1em;
-  width: 80%;
-  text-align: justify;
-  color: #545759;
-}
+
 
 .abutton {
   text-decoration: none;
-  width: 175px;
-  display: flex;
+  width: 300px;
+  height: 30px;
+  display: inline-flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.15em;
